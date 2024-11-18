@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2023052E7459CE57654F8265 /* Pods_EFootPrintTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BB0B0C67013BBE73268A92 /* Pods_EFootPrintTests.framework */; };
+		85E24C3275248C0B0A661F17 /* Pods_EFootPrint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB4EFD0CD61280C716272A8 /* Pods_EFootPrint.framework */; };
+		A84B4F9AE50BF7586EA7B6DC /* Pods_EFootPrint_EFootPrintUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FE27480D4A83DEEF211D6E /* Pods_EFootPrint_EFootPrintUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		82DF6BB82CE4DCAA00EE6DBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		103F4ED1C14CC0216A8FC499 /* Pods-EFootPrint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrint.debug.xcconfig"; path = "Target Support Files/Pods-EFootPrint/Pods-EFootPrint.debug.xcconfig"; sourceTree = "<group>"; };
+		1498268074CB59EEC7E49E9F /* Pods-EFootPrint-EFootPrintUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrint-EFootPrintUITests.debug.xcconfig"; path = "Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25F2E369ED07E66F497056E8 /* Pods-EFootPrint-EFootPrintUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrint-EFootPrintUITests.release.xcconfig"; path = "Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4713E83EDACF81126B43AC5C /* Pods-EFootPrint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrint.release.xcconfig"; path = "Target Support Files/Pods-EFootPrint/Pods-EFootPrint.release.xcconfig"; sourceTree = "<group>"; };
+		614750A5E482A93177EA1BAA /* Pods-EFootPrintTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrintTests.debug.xcconfig"; path = "Target Support Files/Pods-EFootPrintTests/Pods-EFootPrintTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82DF6BA12CE4DCA900EE6DBA /* EFootPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFootPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF6BB72CE4DCAA00EE6DBA /* EFootPrintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EFootPrintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF6BC12CE4DCAA00EE6DBA /* EFootPrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EFootPrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EE6D8F960C3543049EE800 /* Pods-EFootPrintTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFootPrintTests.release.xcconfig"; path = "Target Support Files/Pods-EFootPrintTests/Pods-EFootPrintTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFB4EFD0CD61280C716272A8 /* Pods_EFootPrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFootPrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FE27480D4A83DEEF211D6E /* Pods_EFootPrint_EFootPrintUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFootPrint_EFootPrintUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BB0B0C67013BBE73268A92 /* Pods_EFootPrintTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFootPrintTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,11 +65,15 @@
 		};
 		82DF6BBA2CE4DCAA00EE6DBA /* EFootPrintTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = EFootPrintTests;
 			sourceTree = "<group>";
 		};
 		82DF6BC42CE4DCAA00EE6DBA /* EFootPrintUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = EFootPrintUITests;
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E24C3275248C0B0A661F17 /* Pods_EFootPrint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2023052E7459CE57654F8265 /* Pods_EFootPrintTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84B4F9AE50BF7586EA7B6DC /* Pods_EFootPrint_EFootPrintUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +114,8 @@
 				82DF6BBA2CE4DCAA00EE6DBA /* EFootPrintTests */,
 				82DF6BC42CE4DCAA00EE6DBA /* EFootPrintUITests */,
 				82DF6BA22CE4DCA900EE6DBA /* Products */,
+				C03E0DE9B2FD0CA0F03E49C4 /* Pods */,
+				EE061DD39417149F88BD2C95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +129,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C03E0DE9B2FD0CA0F03E49C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				103F4ED1C14CC0216A8FC499 /* Pods-EFootPrint.debug.xcconfig */,
+				4713E83EDACF81126B43AC5C /* Pods-EFootPrint.release.xcconfig */,
+				1498268074CB59EEC7E49E9F /* Pods-EFootPrint-EFootPrintUITests.debug.xcconfig */,
+				25F2E369ED07E66F497056E8 /* Pods-EFootPrint-EFootPrintUITests.release.xcconfig */,
+				614750A5E482A93177EA1BAA /* Pods-EFootPrintTests.debug.xcconfig */,
+				87EE6D8F960C3543049EE800 /* Pods-EFootPrintTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE061DD39417149F88BD2C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFB4EFD0CD61280C716272A8 /* Pods_EFootPrint.framework */,
+				E4FE27480D4A83DEEF211D6E /* Pods_EFootPrint_EFootPrintUITests.framework */,
+				F2BB0B0C67013BBE73268A92 /* Pods_EFootPrintTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82DF6BCA2CE4DCAA00EE6DBA /* Build configuration list for PBXNativeTarget "EFootPrint" */;
 			buildPhases = (
+				BE14CCFBBEE42C55EF752B76 /* [CP] Check Pods Manifest.lock */,
 				82DF6B9D2CE4DCA900EE6DBA /* Sources */,
 				82DF6B9E2CE4DCA900EE6DBA /* Frameworks */,
 				82DF6B9F2CE4DCA900EE6DBA /* Resources */,
+				5FC40C41B5D0A0B99ACC8A51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +174,6 @@
 				82DF6BA32CE4DCA900EE6DBA /* EFootPrint */,
 			);
 			name = EFootPrint;
-			packageProductDependencies = (
-			);
 			productName = EFootPrint;
 			productReference = 82DF6BA12CE4DCA900EE6DBA /* EFootPrint.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82DF6BCF2CE4DCAA00EE6DBA /* Build configuration list for PBXNativeTarget "EFootPrintTests" */;
 			buildPhases = (
+				FB809815CEEA7CA4808487D4 /* [CP] Check Pods Manifest.lock */,
 				82DF6BB32CE4DCAA00EE6DBA /* Sources */,
 				82DF6BB42CE4DCAA00EE6DBA /* Frameworks */,
 				82DF6BB52CE4DCAA00EE6DBA /* Resources */,
@@ -147,8 +196,6 @@
 				82DF6BBA2CE4DCAA00EE6DBA /* EFootPrintTests */,
 			);
 			name = EFootPrintTests;
-			packageProductDependencies = (
-			);
 			productName = EFootPrintTests;
 			productReference = 82DF6BB72CE4DCAA00EE6DBA /* EFootPrintTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82DF6BD22CE4DCAA00EE6DBA /* Build configuration list for PBXNativeTarget "EFootPrintUITests" */;
 			buildPhases = (
+				14FCEB6F0BD6BE418C5A1F3A /* [CP] Check Pods Manifest.lock */,
 				82DF6BBD2CE4DCAA00EE6DBA /* Sources */,
 				82DF6BBE2CE4DCAA00EE6DBA /* Frameworks */,
 				82DF6BBF2CE4DCAA00EE6DBA /* Resources */,
+				652D28034CDD8DB7A3341D49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +219,6 @@
 				82DF6BC42CE4DCAA00EE6DBA /* EFootPrintUITests */,
 			);
 			name = EFootPrintUITests;
-			packageProductDependencies = (
-			);
 			productName = EFootPrintUITests;
 			productReference = 82DF6BC12CE4DCAA00EE6DBA /* EFootPrintUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +291,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FCEB6F0BD6BE418C5A1F3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFootPrint-EFootPrintUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC40C41B5D0A0B99ACC8A51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652D28034CDD8DB7A3341D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE14CCFBBEE42C55EF752B76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFootPrint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB809815CEEA7CA4808487D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFootPrintTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82DF6B9D2CE4DCA900EE6DBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +434,7 @@
 /* Begin XCBuildConfiguration section */
 		82DF6BCB2CE4DCAA00EE6DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103F4ED1C14CC0216A8FC499 /* Pods-EFootPrint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +463,7 @@
 		};
 		82DF6BCC2CE4DCAA00EE6DBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4713E83EDACF81126B43AC5C /* Pods-EFootPrint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +611,7 @@
 		};
 		82DF6BD02CE4DCAA00EE6DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614750A5E482A93177EA1BAA /* Pods-EFootPrintTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +631,7 @@
 		};
 		82DF6BD12CE4DCAA00EE6DBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EE6D8F960C3543049EE800 /* Pods-EFootPrintTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +651,7 @@
 		};
 		82DF6BD32CE4DCAA00EE6DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1498268074CB59EEC7E49E9F /* Pods-EFootPrint-EFootPrintUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -514,6 +669,7 @@
 		};
 		82DF6BD42CE4DCAA00EE6DBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F2E369ED07E66F497056E8 /* Pods-EFootPrint-EFootPrintUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

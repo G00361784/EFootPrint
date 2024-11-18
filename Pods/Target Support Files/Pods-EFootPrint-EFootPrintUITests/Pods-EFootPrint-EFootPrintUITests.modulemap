@@ -1,0 +1,6 @@
+framework module Pods_EFootPrint_EFootPrintUITests {
+  umbrella header "Pods-EFootPrint-EFootPrintUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
