@@ -10,7 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var LoginOutlet: UITextField!
     
+    @IBOutlet weak var passwordOutlet: UITextField!
+    
+    
     @IBAction func LoginText(_ sender: UITextField) {
+    }
+    @IBAction func PasswordText(_ sender: UITextField) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
