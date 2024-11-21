@@ -35,19 +35,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="LoginText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9cH-DR-TVQ"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YMo-rC-5r1">
                                 <rect key="frame" x="126" y="396" width="174" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="LoginText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Y5b-Ai-bml"/>
-                                    <action selector="PasswordText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ymg-Li-qZ4"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-K3-6TN">
                                 <rect key="frame" x="161" y="458" width="71" height="35"/>
@@ -55,7 +48,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login:"/>
                                 <connections>
-                                    <segue destination="kkD-HI-xll" kind="presentation" id="mAk-Xi-u91"/>
+                                    <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tu-dQ-T0t"/>
+                                    <segue destination="kkD-HI-xll" kind="presentation" identifier="toHomeScreen" id="QmT-l9-cLc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +57,7 @@
                         <color key="backgroundColor" red="0.22745099660000001" green="0.45098042490000001" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="LoginOutlet" destination="cHA-Ck-Y6a" id="dUU-zQ-elW"/>
+                        <outlet property="LoginOutlet" destination="cHA-Ck-Y6a" id="caZ-9q-k2L"/>
                         <outlet property="passwordOutlet" destination="YMo-rC-5r1" id="c3i-Fd-utu"/>
                     </connections>
                 </viewController>
