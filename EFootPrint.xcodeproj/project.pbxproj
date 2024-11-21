@@ -65,15 +65,11 @@
 		};
 		82DF6BBA2CE4DCAA00EE6DBA /* EFootPrintTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = EFootPrintTests;
 			sourceTree = "<group>";
 		};
 		82DF6BC42CE4DCAA00EE6DBA /* EFootPrintUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = EFootPrintUITests;
 			sourceTree = "<group>";
 		};
@@ -139,7 +135,6 @@
 				614750A5E482A93177EA1BAA /* Pods-EFootPrintTests.debug.xcconfig */,
 				87EE6D8F960C3543049EE800 /* Pods-EFootPrintTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -441,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XTP6PU5W6U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EFootPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XTP6PU5W6U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EFootPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
