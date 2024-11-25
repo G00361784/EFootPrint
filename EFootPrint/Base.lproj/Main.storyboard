@@ -65,9 +65,18 @@
                                     <segue destination="kkD-HI-xll" kind="presentation" identifier="toHomeScreen" id="QmT-l9-cLc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="to5-qv-eVC">
+                                <rect key="frame" x="161" y="576" width="71" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login:"/>
+                                <connections>
+                                    <segue destination="uJy-uH-RlE" kind="presentation" id="AiW-lE-IBM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.22745099660000001" green="0.45098042490000001" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
                     <connections>
                         <outlet property="LoginOutlet" destination="cHA-Ck-Y6a" id="caZ-9q-k2L"/>
@@ -77,6 +86,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.946564885496173" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pzA-iM-Bb5">
+            <objects>
+                <viewController id="uJy-uH-RlE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y7d-X7-AsI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wna-vr-4v8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zB8-Pk-AIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="674"/>
         </scene>
         <!--RegisterViewController-->
         <scene sceneID="96K-Ze-Emk">
@@ -98,6 +122,9 @@
         <image name="Leaf_logo" width="509" height="435"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
