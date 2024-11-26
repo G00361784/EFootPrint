@@ -169,6 +169,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="LoginPressed:" destination="6rF-VR-5gK" eventType="touchUpInside" id="zza-R7-P6Y"/>
+                                    <segue destination="ZC7-jb-acZ" kind="presentation" id="Q0M-xU-fAs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-RA-Lda">
                                 <rect key="frame" x="76" y="351" width="52" height="21"/>
@@ -209,6 +213,9 @@
             <point key="canvasLocation" x="96.946564885496173" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q0M-xU-fAs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Leaf_logo" width="509" height="435"/>
         <systemColor name="systemBackgroundColor">
