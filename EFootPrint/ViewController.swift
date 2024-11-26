@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     }
     
     
-    
     @IBOutlet weak var LoginOutlet: UITextField!
     
     @IBOutlet weak var passwordOutlet: UITextField!
     
-    @IBAction func LoginPressed(_ sender: UIButton) {
+
+    @IBAction func registerPressed(_ sender: UIButton) {
         if let email = LoginOutlet.text, let password = passwordOutlet.text {
             
             // Ensure email and password are not empty
@@ -52,5 +52,4 @@ class ViewController: UIViewController {
             showError("Email or password cannot be nil.")
         }
     }
-        
-}
+    }
