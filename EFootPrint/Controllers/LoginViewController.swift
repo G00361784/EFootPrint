@@ -6,17 +6,23 @@
 //
 
 import UIKit
-
+import FirebaseCore
+import FirebaseAuth
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func LoginPressed(_ sender: UIButton) {
-        
-        
-        
-        
+        if let email = LoginEmail.text, let password = LoginPassword.text {
+            
+            
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                guard let strongSelf = self else { return }
+                // ...
+            }
+            
+        }
     }
     
     @IBOutlet weak var LoginPassword: UITextField!
