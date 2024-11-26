@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ViewController-->
+        <!--Register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="EFootPrint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="BYZ-38-t0r" customClass="ViewController" customModule="EFootPrint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="1754.9618320610687" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen-->
         <scene sceneID="8X0-rM-iNH">
             <objects>
-                <viewController id="ZC7-jb-acZ" sceneMemberID="viewController">
+                <viewController title="Home Screen" id="ZC7-jb-acZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NkH-eL-Lps">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,6 +181,10 @@
                         <viewLayoutGuide key="safeArea" id="fiA-vB-PlY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
+                    <connections>
+                        <outlet property="LoginEmail" destination="H4K-Cy-Udu" id="vfx-bz-F0e"/>
+                        <outlet property="LoginPassword" destination="4mV-k9-s12" id="N5n-ur-JJ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNf-gh-0Lh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
