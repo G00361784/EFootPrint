@@ -9,6 +9,8 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 class ViewController: UIViewController {
+   
+    
     func showError(_ message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
