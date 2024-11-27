@@ -47,7 +47,7 @@
                                     <segue destination="ZC7-jb-acZ" kind="show" identifier="toHomeScreen" id="9xh-bu-Dyz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Leaf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="UNv-Va-A56">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroupProjectLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UNv-Va-A56">
                                 <rect key="frame" x="76" y="118" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -139,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Leaf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qsR-pt-0mW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroupProjectLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qsR-pt-0mW">
                                 <rect key="frame" x="76" y="128" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -185,7 +185,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Leaf_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Zh-mO-2gk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroupProjectLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Zh-mO-2gk">
                                 <rect key="frame" x="76" y="110" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -277,7 +277,7 @@
         <segue reference="Q0M-xU-fAs"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Leaf_logo" width="509" height="435"/>
+        <image name="GroupProjectLogo" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
