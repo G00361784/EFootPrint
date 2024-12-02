@@ -16,51 +16,24 @@ class EmissionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         authorizeHealthKit()
-        showPermissionAlert()
     }
-    func showPermissionAlert() {
-            let alertController = UIAlertController(title: "Allow Access to HealthKit?",
-                                                    message: "This app needs access to your step data to track your activity.",
-                                                    preferredStyle: .alert)
-
-            let allowAction = UIAlertAction(title: "Allow", style: .default) { _ in
-                self.requestHealthKitAuthorization()
-            }
-
-            alertController.addAction(allowAction)
-            present(alertController, animated: true, completion: nil)
-        }
-
-        func requestHealthKitAuthorization() {
-            let healthDataTypes = Set([HKQuantityType.quantityType(forIdentifier: .stepCount)!])
-
-            healthStore.requestAuthorization(toShare: [], read: healthDataTypes) { (success, error) in
-                if success {
-                    self.getStepCount()
-                } else {
-                    // Handle authorization error (e.g., show an error message)
-                    if let error = error {
-                        print("HealthKit authorization failed with error: \(error)")
-                        // You could display an alert here to inform the user.
-                    }
-                }
-            }
-        }
 
     func authorizeHealthKit() {
         let healthDataTypes = Set([HKQuantityType.quantityType(forIdentifier: .stepCount)!])
 
         healthStore.requestAuthorization(toShare: [], read: healthDataTypes) { (success, error) in
-            if success {
-                self.getStepCount()
+            if !success {
+                // Handle authorization error
+            } else {
+                self.getSteps()
             }
         }
     }
 
-    func getStepCount() {
-        let stepCountType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
+    func getSteps() {
+        let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
 
-        let query = HKStatisticsQuery(quantityType: stepCountType,
+        let query = HKStatisticsQuery(quantityType: stepType,
                                     quantitySamplePredicate: nil,
                                     options: .cumulativeSum) { _, result, error in
             guard let result = result else {
@@ -68,10 +41,12 @@ class EmissionsViewController: UIViewController {
                 return
             }
 
-            if let stepCount = result.sumQuantity() {
-                let stepCountDouble = stepCount.doubleValue(for: HKUnit.count())
+            if let sum = result.sumQuantity() {
+                let stepCount = sum.doubleValue(for: HKUnit.count())
+                print("Total steps: \(stepCount)")
+                // Update UI on main thread
                 DispatchQueue.main.async {
-                    self.stepCountLabel.text = "\(Int(stepCountDouble)) steps"
+                    self.stepCountLabel.text = "Total steps: \(stepCount)"
                 }
             }
         }

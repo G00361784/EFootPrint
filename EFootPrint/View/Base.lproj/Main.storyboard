@@ -93,7 +93,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log Emissions"/>
                                 <connections>
-                                    <segue destination="m7W-1Z-aM7" kind="show" id="3p2-kw-rUR"/>
+                                    <segue destination="m7W-1Z-aM7" kind="show" id="6tQ-EJ-PwC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whZ-c9-zEw">
@@ -124,9 +124,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steps:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-gC-xyc">
-                                <rect key="frame" x="16" y="223" width="130" height="48"/>
+                                <rect key="frame" x="16" y="223" width="361" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0un-b0-hVq">
+                                <rect key="frame" x="8" y="273" width="390" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Let's say you walk 5 miles instead of driving. A typical gasoline-powered car emits around 404 grams of CO2 per mile. So, you've potentially saved 2020 grams (2.02 kg) of CO2 emissions.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -136,7 +144,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7bd-EL-pvH"/>
                     <connections>
-                        <outlet property="stepCountLabel" destination="eYa-gC-xyc" id="mGk-ZT-aXS"/>
+                        <outlet property="stepCountLabel" destination="eYa-gC-xyc" id="IOg-zS-DAc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZ6-Fb-cRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,7 +154,7 @@
         <!--RegisterViewController-->
         <scene sceneID="96K-Ze-Emk">
             <objects>
-                <viewController title="RegisterViewController" id="kkD-HI-xll" customClass="RegisterViewController" customModule="EFootPrint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RegisterViewController" id="kkD-HI-xll" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o83-3f-Jge">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
