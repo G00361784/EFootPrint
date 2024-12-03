@@ -51,7 +51,7 @@ class PersonalLogViewController: UIViewController {
             
             
             DispatchQueue.main.async {
-                self.stepsTodayLabel.text = "Today you walked\(Int(round(steps)))Steps totalin to saving  kg in carbon emissions"
+                self.stepsTodayLabel.text = "Today you walked \(Int(round(steps))) Steps"
             }
         }
         // Execute the query
