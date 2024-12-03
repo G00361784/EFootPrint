@@ -14,7 +14,7 @@ class EmissionsViewController: UIViewController {
     @IBOutlet weak var walkVsCar: UILabel!
     let healthStore = HKHealthStore()
 
-    func calculateCarbonSavings(distanceInMiles: Double, transportationType: String) -> Double {
+    public func calculateCarbonSavings(distanceInMiles: Double, transportationType: String) -> Double {
 
         let emissionsPerMile: Double
 
@@ -73,7 +73,7 @@ class EmissionsViewController: UIViewController {
                 
                 
                 DispatchQueue.main.async {
-                    self.stepCountLabel.text = "Total steps: \(stepCount)"
+                    self.stepCountLabel.text = "Total steps as recorded by you through your apple device: \(stepCount)"
                     self.walkVsCar.text = "\(calculationPerformed)"
                     
                 }
