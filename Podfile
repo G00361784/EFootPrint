@@ -8,7 +8,7 @@ target 'EFootPrint' do
   # Pods for EFootPrint
     pod 'FirebaseAuth'
     pod 'FirebaseFirestore'
-    
+    pod 'Firebase/Database'
   target 'EFootPrintTests' do
     inherit! :search_paths
     # Pods for testing
