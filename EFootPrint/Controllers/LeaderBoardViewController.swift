@@ -7,27 +7,30 @@
 
 import UIKit
 import FirebaseDatabase
+
 class LeaderBoardViewController: UIViewController {
 
-    
+    @IBOutlet weak var leaderBoardLabel: UILabel!
     var ref: DatabaseReference!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference()  // Do any additional setup after loading the view.
-    }
-    
-    
-    
-   
-    /*
-    // MARK: - Navigation
+        ref = Database.database().reference()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        ref.child("playerinfo").child("player1").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get player data
+            let value = snapshot.value as? [String: Any]
+            let name = value?["name"] as? String ?? ""
+            let age = value?["age"] as? Int ?? 0
+            let score = value?["score"] as? Int ?? 0
 
+            // Now you have the player's name, age, and score
+            print("Name: \(name), Age: \(age), Score: \(score)")
+            self.leaderBoardLabel.text = "\(name) \(age) \(score)"
+            // ... (update UI elements with the retrieved data) ...
+
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 }
