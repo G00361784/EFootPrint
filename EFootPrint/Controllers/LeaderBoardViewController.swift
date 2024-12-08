@@ -8,29 +8,52 @@
 import UIKit
 import FirebaseDatabase
 
-class LeaderBoardViewController: UIViewController {
+class LeaderBoardViewController: UIViewController, UITableViewDataSource  {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    
     @IBOutlet weak var leaderBoardLabel: UILabel!
     var ref: DatabaseReference!
+        var players: [[String: Any]] = [] // Array to store player data
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        ref = Database.database().reference()
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            ref = Database.database().reference()
+            tableView.dataSource = self
 
-        ref.child("playerinfo").child("player1").observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get player data
-            let value = snapshot.value as? [String: Any]
-            let name = value?["name"] as? String ?? ""
-            let age = value?["age"] as? Int ?? 0
-            let score = value?["score"] as? Int ?? 0
+            ref.child("playerinfo").observeSingleEvent(of: .value, with: { (snapshot) in
+                guard let value = snapshot.value as? [String: [String: Any]] else { return }
 
-            // Now you have the player's name, age, and score
-            print("Name: \(name), Age: \(age), Score: \(score)")
-            self.leaderBoardLabel.text = "\(name) \(age) \(score)"
-            // ... (update UI elements with the retrieved data) ...
+                for playerData in value.values {
+                    self.players.append(playerData)
+                }
 
-        }) { (error) in
-            print(error.localizedDescription)
+                self.tableView.reloadData() // Refresh the table view
+
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+        }
+
+        // MARK: - UITableViewDataSource
+
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return players.count
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath) // Make sure you have a cell with this identifier in your storyboard
+            let player = players[indexPath.row]
+
+            let name = player["name"] as? String ?? ""
+            let age = player["age"] as? Int ?? 0
+            let score = player["score"] as? Int ?? 0
+
+            cell.textLabel?.text = "\(name) - Age: \(age) - Score: \(score)"
+
+            return cell
         }
     }
-}
