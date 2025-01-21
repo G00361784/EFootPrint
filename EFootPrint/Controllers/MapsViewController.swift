@@ -18,7 +18,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         mapView.delegate = self
         
-        // Set initial location (e.g., London)
+        // Set initial location
         let initialLocation = CLLocation(latitude: 53.2740, longitude: -9.0513)
         let regionRadius: CLLocationDistance = 1000
         let coordinateRegion = MKCoordinateRegion(center: initialLocation.coordinate,

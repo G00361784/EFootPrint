@@ -519,8 +519,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="XUp-ZO-vSy"/>
         <segue reference="ItL-uc-BBT"/>
-        <segue reference="Q0M-xU-fAs"/>
+        <segue reference="9xh-bu-Dyz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="GroupProjectLogo" width="1024" height="1024"/>
