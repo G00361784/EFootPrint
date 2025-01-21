@@ -291,7 +291,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p4t-Bl-cKe"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gj3-PL-VeC"/>
                 </viewController>
@@ -519,7 +519,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XUp-ZO-vSy"/>
         <segue reference="ItL-uc-BBT"/>
         <segue reference="9xh-bu-Dyz"/>
     </inferredMetricsTieBreakers>
