@@ -211,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0un-b0-hVq">
-                                <rect key="frame" x="8" y="273" width="390" height="99"/>
+                                <rect key="frame" x="8" y="273" width="390" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Let's say you walk 5 miles instead of driving. A typical gasoline-powered car emits around 404 grams of CO2 per mile. So, you've potentially saved 2020 grams (2.02 kg) of CO2 emissions.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
