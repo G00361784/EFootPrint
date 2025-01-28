@@ -7,6 +7,9 @@
 
 import UIKit
 import MapKit
+import FirebaseFirestore
+
+
 class MapsViewController: UIViewController, MKMapViewDelegate {
 
     
@@ -38,14 +41,26 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         }
 
         // Adds a pin annotation to the map
-        func addAnnotation(at coordinate: CLLocationCoordinate2D) {
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = coordinate
-            annotation.title = "New Pin"
-            annotation.subtitle = "Added by user"
+            func addAnnotation(at coordinate: CLLocationCoordinate2D) {
+                let db = Firestore.firestore()
 
-            mapView.addAnnotation(annotation)
-        }
+                let pinData: [String: Any] = [
+                    "latitude": coordinate.latitude,
+                    "longitude": coordinate.longitude,
+                    "title": "New Pin",
+                    "subtitle": "Added by user",
+                    // "userId": Auth.auth().currentUser?.uid?? ""
+                ]
+
+                db.collection("pins").addDocument(data: pinData) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        
+                    }
+                }
+            }
+
 
         // MARK: - MKMapViewDelegate
 
