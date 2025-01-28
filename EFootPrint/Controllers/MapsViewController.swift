@@ -7,39 +7,87 @@
 
 import UIKit
 import MapKit
+
 class MapsViewController: UIViewController, MKMapViewDelegate {
 
     
     @IBOutlet weak var mapView: MKMapView!
-    
-    
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        mapView.delegate = self
-        
-        // Set initial location
-        let initialLocation = CLLocation(latitude: 53.2740, longitude: -9.0513)
-        let regionRadius: CLLocationDistance = 1000
-        let coordinateRegion = MKCoordinateRegion(center: initialLocation.coordinate,
-                                                  latitudinalMeters: regionRadius,
-                                                  longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
-        
-        // Add an annotation
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = initialLocation.coordinate
-        annotation.title = "Galway"
-    }
+           super.viewDidLoad()
 
-    /*
-    // MARK: - Navigation
+           mapView.delegate = self
+           mapView.showsUserLocation = true
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+           let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(gestureRecognizer:)))
+           mapView.addGestureRecognizer(longPressGesture)
+       }
 
-}
+       @objc func handleLongPress(gestureRecognizer: UIGestureRecognizer) {
+           guard gestureRecognizer.state == .began else { return }
+
+           let touchPoint = gestureRecognizer.location(in: mapView)
+           let touchCoordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+
+           addAnnotation(at: touchCoordinate)
+       }
+
+       func addAnnotation(at coordinate: CLLocationCoordinate2D) {
+           let annotation = MKPointAnnotation()
+           annotation.coordinate = coordinate
+           annotation.title = "New Pin"
+           annotation.subtitle = "Added by user"
+
+           mapView.addAnnotation(annotation)
+       }
+
+       // MARK: - MKMapViewDelegate
+
+       func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+           guard let annotation = annotation as? MKPointAnnotation else { return nil }
+
+           let identifier = "AnnotationView"
+
+           var markerView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
+
+           if markerView == nil {
+               markerView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+               markerView?.canShowCallout = true
+               markerView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+
+               // Customize marker appearance
+               markerView?.markerTintColor = .blue // Sets the marker color
+               markerView?.glyphText = "📍" // Sets a glyph (emoji or text) inside the marker
+               //or a custom image
+               //markerView?.glyphImage = UIImage(systemName: "mappin.and.ellipse")
+
+           } else {
+               markerView?.annotation = annotation
+           }
+
+           return markerView
+       }
+
+       func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+           guard let annotation = view.annotation else { return }
+
+           if control == view.rightCalloutAccessoryView {
+               print("Tapped detail disclosure for \(annotation.title ?? "No title")")
+
+               // Example: Show an alert
+               let alert = UIAlertController(title: annotation.title as! String, message: "Details for this pin.", preferredStyle: .alert)
+               alert.addAction(UIAlertAction(title: "OK", style: .default))
+               present(alert, animated: true)
+
+               // Or perform a segue:
+               // performSegue(withIdentifier: "showDetail", sender: annotation)
+           }
+       }
+       // Optional: Handle annotation selection/deselection
+       func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+           print("Annotation selected: \(view.annotation?.title ?? "")")
+       }
+
+       func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+           print("Annotation deselected: \(view.annotation?.title ?? "")")
+       }
+   }

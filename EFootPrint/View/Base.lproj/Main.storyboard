@@ -92,7 +92,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="L1v-zj-Wer"/>
                     <connections>
-                        <outlet property="mapView" destination="C2b-0O-TMw" id="JTE-Gd-ARi"/>
+                        <outlet property="mapView" destination="C2b-0O-TMw" id="snq-qk-f2J"/>
+                        <outlet property="mapsView" destination="C2b-0O-TMw" id="au4-vG-jnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJm-ML-Fi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
