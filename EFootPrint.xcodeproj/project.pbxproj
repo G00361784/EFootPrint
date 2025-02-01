@@ -65,11 +65,15 @@
 		};
 		82DF6BBA2CE4DCAA00EE6DBA /* EFootPrintTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = EFootPrintTests;
 			sourceTree = "<group>";
 		};
 		82DF6BC42CE4DCAA00EE6DBA /* EFootPrintUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = EFootPrintUITests;
 			sourceTree = "<group>";
 		};
@@ -160,7 +164,6 @@
 				82DF6B9E2CE4DCA900EE6DBA /* Frameworks */,
 				82DF6B9F2CE4DCA900EE6DBA /* Resources */,
 				5FC40C41B5D0A0B99ACC8A51 /* [CP] Embed Pods Frameworks */,
-				BFDA14BB7D4372EA26A2A366 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,7 +208,6 @@
 				82DF6BBE2CE4DCAA00EE6DBA /* Frameworks */,
 				82DF6BBF2CE4DCAA00EE6DBA /* Resources */,
 				652D28034CDD8DB7A3341D49 /* [CP] Embed Pods Frameworks */,
-				9220943EB85B51C94BB852A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,23 +347,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9220943EB85B51C94BB852A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFootPrint-EFootPrintUITests/Pods-EFootPrint-EFootPrintUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BE14CCFBBEE42C55EF752B76 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,23 +367,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFDA14BB7D4372EA26A2A366 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFootPrint/Pods-EFootPrint-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB809815CEEA7CA4808487D4 /* [CP] Check Pods Manifest.lock */ = {

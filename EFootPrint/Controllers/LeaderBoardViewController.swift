@@ -4,7 +4,7 @@
 //
 //  Created by Joseph Mccole on 03/12/2024.
 //
-
+/*
 import UIKit
 import FirebaseDatabase
 
@@ -64,3 +64,4 @@ class LeaderBoardViewController: UIViewController, UITableViewDataSource  {
            return cell
        }
    }
+*/
