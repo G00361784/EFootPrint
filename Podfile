@@ -6,6 +6,7 @@ target 'EFootPrint' do
   use_frameworks!
 
   # Pods for EFootPrint
+  pod 'Firebase/Core'
   pod 'FirebaseAuth'
   pod 'Firebase/Database'
 
